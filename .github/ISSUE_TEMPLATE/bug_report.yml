@@ -1,0 +1,29 @@
+name: 问题报告
+description: 报告计算、输入、界面或启动问题
+title: "[Bug] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: 程序版本和Windows版本
+      placeholder: "2.1.0 / Windows 10 64位"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 复现输入和步骤
+      description: 给出四条属性、权重、保底目标及档位；可粘贴导出的配置JSON。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期与实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: 错误信息或截图
+      description: 请去除账号凭据等无关信息。
